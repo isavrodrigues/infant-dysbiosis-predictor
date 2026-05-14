@@ -40,3 +40,13 @@ Sprint #5 - 12/5: Entreg´aveis Finais
 achados
 •⁠  ⁠Gravar v´ıdeo demonstrando o pipeline funcionando e os resultados do SHAP
 •⁠  ⁠Revisar o relat´orio final e preparar os slides para a apresenta¸c˜ao
+
+
+
+portfolio de modelo supervisionado
+mais simples ate o mais complexo
+e fzr soh com variaveis clinicas
+
+xgboost tirar cluster c2 e sem 
+
+clarificar o objetivo disso e explicitar estrategiaue 

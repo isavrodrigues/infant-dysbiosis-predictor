@@ -1,0 +1,63 @@
+{
+  "modelo_2": {
+    "algoritmo": "Random Forest",
+    "n": 412,
+    "target": "dmm_clusters_taxa",
+    "classes_target": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "metrica_principal": "f1_weighted",
+    "arquivo": "data/processed/model2_cluster_dataset.csv",
+    "features": {
+      "categoricas": [
+        "birth_mode",
+        "feeding_mode",
+        "mother_antibiotics",
+        "baby_sex",
+        "baby_ethnicity",
+        "baby_race"
+      ],
+      "numericas": [
+        "Normed Age at Collection (days)",
+        "amr_gene_sum_abundance",
+        "vf_sum_abundance"
+      ]
+    }
+  },
+  "modelo_1": {
+    "algoritmo": "XGBoost",
+    "n": 210,
+    "target": "adverse_outcomes",
+    "classes_target": [
+      0,
+      1
+    ],
+    "metrica_principal": "recall",
+    "metricas_secundarias": [
+      "roc_auc",
+      "f1"
+    ],
+    "desbalanceamento": "scale_pos_weight",
+    "arquivo": "data/processed/model1_outcome_dataset.csv",
+    "features": {
+      "categoricas": [
+        "birth_mode",
+        "feeding_mode",
+        "mother_antibiotics",
+        "baby_sex",
+        "baby_ethnicity",
+        "baby_race"
+      ],
+      "numericas": [
+        "Normed Age at Collection (days)",
+        "amr_gene_sum_abundance",
+        "vf_sum_abundance"
+      ],
+      "covariate": [
+        "antibiotics_first_2_years"
+      ]
+    }
+  }
+}
