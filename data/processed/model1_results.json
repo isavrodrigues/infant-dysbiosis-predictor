@@ -1,71 +1,37 @@
 {
-  "modelo_full": {
-    "descricao": "XGBoost com antibiotics_first_2_years (referencia paper)",
-    "n_treino": 166,
-    "n_holdout": 42,
-    "features": [
-      "birth_mode",
-      "mother_antibiotics",
-      "baby_sex",
-      "baby_ethnicity",
-      "baby_race",
-      "Normed Age at Collection (days)",
-      "amr_gene_sum_abundance",
-      "vf_sum_abundance",
-      "antibiotics_first_2_years",
-      "feeding_Breast",
-      "feeding_Formula",
-      "feeding_Mixed"
-    ],
-    "holdout": {
-      "recall": 0.4615,
-      "roc_auc": 0.6446,
-      "f1": 0.4138
-    },
-    "cv_media": {
-      "recall": 0.3933,
-      "roc_auc": 0.5508,
-      "f1": 0.3883
-    },
-    "best_params": {
-      "n_estimators": 400,
-      "max_depth": 3,
-      "learning_rate": 0.05,
-      "subsample": 1.0,
-      "colsample_bytree": 0.8
-    },
-    "scale_pos_weight": 2.39
+  "modelo": "XGBoost",
+  "n_treino": 166,
+  "n_holdout": 42,
+  "holdout": {
+    "recall": 0.4615,
+    "roc_auc": 0.6446,
+    "f1": 0.4138
   },
-  "modelo_birth_only": {
-    "descricao": "XGBoost sem antibiotics_first_2_years \u2014 modelo para triagem neonatal e Sprint 4 SHAP",
-    "n_treino": 166,
-    "n_holdout": 42,
-    "features": [
-      "birth_mode",
-      "mother_antibiotics",
-      "baby_sex",
-      "baby_ethnicity",
-      "baby_race",
-      "Normed Age at Collection (days)",
-      "amr_gene_sum_abundance",
-      "vf_sum_abundance",
-      "feeding_Breast",
-      "feeding_Formula",
-      "feeding_Mixed"
-    ],
-    "holdout": {
-      "recall": 0.9231,
-      "roc_auc": 0.5968,
-      "f1": 0.5106,
-      "pr_auc": 0.4557
-    },
-    "best_params": {
-      "n_estimators": 400,
-      "max_depth": 3,
-      "learning_rate": 0.05,
-      "subsample": 1.0,
-      "colsample_bytree": 0.8
-    },
-    "scale_pos_weight": 2.39
-  }
+  "cv_media": {
+    "recall": 0.3933,
+    "roc_auc": 0.5508,
+    "f1": 0.3883
+  },
+  "best_params": {
+    "n_estimators": 400,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "subsample": 1.0,
+    "colsample_bytree": 0.8
+  },
+  "scale_pos_weight": 2.39,
+  "features": [
+    "birth_mode",
+    "mother_antibiotics",
+    "baby_sex",
+    "baby_ethnicity",
+    "baby_race",
+    "Normed Age at Collection (days)",
+    "amr_gene_sum_abundance",
+    "vf_sum_abundance",
+    "antibiotics_first_2_years",
+    "feeding_Breast",
+    "feeding_Formula",
+    "feeding_Mixed"
+  ]
 }
